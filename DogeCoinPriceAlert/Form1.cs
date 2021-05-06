@@ -65,8 +65,9 @@ namespace DogeCoinPriceAlert
                 {
                     DogeCoinObj dogeCoin = await GetDogeCoinData();
                     if (dogeCoin == null)
-                    {
+                    { 
                         throw new Exception("DOGECOIN KONNTE NICHT ABGERUFEN WERDEN");
+
                     }
 
                     double currentPrice = dogeCoin.data.prices[0].price;
